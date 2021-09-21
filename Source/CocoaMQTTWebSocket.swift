@@ -285,7 +285,6 @@ extension CocoaMQTTWebSocket: CocoaMQTTWebSocketConnectionDelegate {
 
 // MARK: - CocoaMQTTWebSocket.FoundationConnection
 
-@available(OSX 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
 public extension CocoaMQTTWebSocket {
     class FoundationConnection: NSObject, CocoaMQTTWebSocketConnection {
 
@@ -345,7 +344,6 @@ public extension CocoaMQTTWebSocket {
     }
 }
 
-@available(OSX 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
 extension CocoaMQTTWebSocket.FoundationConnection: URLSessionWebSocketDelegate {
     public func urlSession(_ session: URLSession, task: URLSessionTask, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
         queue.async {
