@@ -284,7 +284,6 @@ extension CocoaMQTTWebSocket: CocoaMQTTWebSocketConnectionDelegate {
 }
 
 // MARK: - CocoaMQTTWebSocket.FoundationConnection
-
 public extension CocoaMQTTWebSocket {
     class FoundationConnection: NSObject, CocoaMQTTWebSocketConnection {
 

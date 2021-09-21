@@ -7,7 +7,7 @@ let package = Package(
     name: "CocoaMQTT",
     platforms: [
         .macOS(.v10_12),
-        .iOS(.v14),
+        .iOS(.v13),
         .tvOS(.v10)
     ],
     products: [
